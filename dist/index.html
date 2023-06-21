@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mail</title>
+</head>
+<body>
+<div class="container">
+    <h1>Отправка письма на почту</h1>
+    <form id="send">
+        <div class="form-group">
+            <label for="recipientEmail">Адрес получателя</label>
+            <input type="email" class="form-control" placeholder="example@gmail.com" id="recipientEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Тема письма</label>
+            <input type="text" class="form-control"  placeholder="Скидка 20%" id="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea placeholder="Мы предоставляем вам скидку!" class="form-control" id="message" rows="5" required></textarea>
+        </div>
+<!--        <div class="custom-file">-->
+<!--            <input type="file" class="custom-file-input" id="customFile" name="file">-->
+<!--            <label class="custom-file-label" for="customFile">Выберите файл</label>-->
+<!--        </div>-->
+<!--        <ul class="list-group">-->
+<!--&lt;!&ndash;            <li class="list-group-item">example_file1.jpg</li>&ndash;&gt;-->
+<!--        </ul>-->
+        <button  type="submit" class="btn btn-primary w-25">Отправить</button>
+    </form>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
